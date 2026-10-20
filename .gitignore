@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.cache/
+src-tauri/target/
+src-tauri/gen/
+release/*.exe
+release/*.zip
+release/THIRD_PARTY_NOTICES.md
+release/vendor/
+*.lnk
+*.log
+.env
+.env.*

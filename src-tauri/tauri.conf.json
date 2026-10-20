@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "快艇骰子策略助手",
+  "version": "1.0.0",
+  "identifier": "local.yacht-dice-zh.app",
+  "build": {"frontendDist": "../dist"},
+  "app": {
+    "windows": [{"title":"快艇骰子 · 策略助手","width":1220,"height":940,"minWidth":780,"minHeight":640,"backgroundColor":"#f6f7f5"}],
+    "security": {"csp":"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; worker-src 'self'; connect-src 'self' ipc: http://ipc.localhost"}
+  },
+  "bundle": {"active":false,"icon":["icons/icon.ico"]}
+}

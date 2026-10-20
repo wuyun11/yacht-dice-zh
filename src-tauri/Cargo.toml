@@ -1,0 +1,23 @@
+[package]
+name = "yacht-dice-zh"
+version = "1.0.0"
+description = "快艇骰子中文离线策略助手"
+authors = ["Yacht Dice contributors"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+opt-level = "s"
+panic = "abort"
